@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { prop } from 'styled-tools';
 import { rgba } from 'polished';
@@ -15,9 +14,6 @@ const StyledHeader = styled.div`
 
 const StyledH1 = styled.h1`
   margin: 0;
-`;
-
-const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
   transition: all 200ms ease-out;
@@ -38,9 +34,7 @@ const HeaderContainer = styled.div`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <HeaderContainer>
-      <StyledH1>
-        <StyledLink>{siteTitle}</StyledLink>
-      </StyledH1>
+      <StyledH1>{siteTitle}</StyledH1>
     </HeaderContainer>
   </StyledHeader>
 );
