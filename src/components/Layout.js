@@ -10,6 +10,7 @@ import theme from '../styles/theme';
 
 const StyledContainer = styled(Container)`
   background-color: ${theme.colors.blueGreen};
+  height: 100vh;
 `;
 
 const Layout = ({ children }) => {
